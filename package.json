@@ -1,0 +1,58 @@
+{
+  "name": "hello-heroku",
+  "version": "1.0.0",
+  "description": "hosting node app on heroku",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/felixgondwe/felixgondwe.github-heroku-node-app.io.git"
+  },
+  "keywords": [
+    "web",
+    "dev"
+  ],
+  "author": "felixgondwe",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/felixgondwe/felixgondwe.github-heroku-node-app.io/issues"
+  },
+  "homepage": "https://github.com/felixgondwe/felixgondwe.github-heroku-node-app.io#readme",
+  "engines": {
+    "node": "6.0.0"
+  },
+  "dependencies": {
+    
+    "body-parser": "^1.15.2",
+    "bootstrap": "^3.3.7",
+    "express": "^4.14.0",
+    "method-override": "^2.3.6",
+    "mongoose": "^4.6.3",
+    "morgan": "^1.7.0",
+   
+    "@angular/common": "2.0.0-rc.1",
+    "@angular/compiler": "2.0.0-rc.1",
+    "@angular/core": "2.0.0-rc.1",
+    "@angular/platform-browser": "2.0.0-rc.1",
+    "@angular/platform-browser-dynamic": "2.0.0-rc.1",
+    "@angular/router": "2.0.0-rc.1",
+    "@angular/http": "2.0.0-rc.1",
+     "systemjs": "0.19.27",
+    "es6-shim": "^0.35.0",
+    "reflect-metadata": "0.1.8",
+    "rxjs": "5.0.0-beta.6",
+    "zone.js": "^0.6.12"
+  },
+  
+  "devDependencies": {
+     "gulp": "3.9.1",
+     "gulp-rimraf": "0.2.0",
+     "gulp-uglify": "1.5.3",
+     "gulp-concat": "2.6.0",
+     "gulp-cssmin": "0.1.7",
+     "gulp-replace": "0.5.4"
+   }
+}
