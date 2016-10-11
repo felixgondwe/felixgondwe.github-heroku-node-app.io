@@ -9,8 +9,8 @@ Find the web app page [here](https://safe-woodland-17415.herokuapp.com/)
     * routes.js
     * index.js
 * helpers
-    *helper.js
-*models
+    * helper.js
+* models
     * user.js
     * notes.js
 * public
