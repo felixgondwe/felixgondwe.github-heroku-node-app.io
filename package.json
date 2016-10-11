@@ -22,7 +22,8 @@
   },
   "homepage": "https://github.com/felixgondwe/felixgondwe.github-heroku-node-app.io#readme",
   "engines": {
-    "node": "6.0.0"
+    "node": "6.0.0",
+    "npm":"3.8.6"
   },
   "dependencies": {
     
