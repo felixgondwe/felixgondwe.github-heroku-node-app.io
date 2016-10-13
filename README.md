@@ -2,7 +2,7 @@
 Hosting a node application on heroku, basic hello world kind of application
 
 ## Getting started ##
-Documentation in progress
+Documentation in progress. 
 Find the web app page [here](https://safe-woodland-17415.herokuapp.com/)
 ## folder structure ##
 * controllers
