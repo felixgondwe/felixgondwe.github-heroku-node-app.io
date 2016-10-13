@@ -1,9 +1,9 @@
 # felixgondwe.github-heroku-node-app.io
 Hosting a node application on heroku, basic hello world kind of application
 ## Stack ##
-Front-end: AngularJs & Bootstrap
-Back-end: NodeJs(express) & MongoDB
-ORM: mongoose
+* Front-end: AngularJs & Bootstrap
+* Back-end: NodeJs(express) & MongoDB
+* ORM: mongoose
 
 ## Getting started ##
 Documentation in progress. 
