@@ -6,5 +6,5 @@
 
 (function(){
     'use strict';
-    angular.module('fella',['ui.bootstrap','ui-router','ngCookies']); // will use ui.bootstrap for now
+    angular.module('fella',['ngRoute','ui.bootstrap']); // will use ui.bootstrap for now
 })();
