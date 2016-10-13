@@ -13,7 +13,7 @@
          * @return {promise} 
          */
         this.getAllCars = function(){
-            return $http.get('https://api.edmunds.com/api/vehicle/v2/makes?state=used&year=2014&view=basic&fmt=json&api_key=yxfmfzrcg3nrvudv7hj2pbr2');
+            return $http.get('https://api.edmunds.com/api/vehicle/v2/makes?state=used&year=2014&view=basic&fmt=json&api_key=gebpmy3r4y3mau58bsageuuk');
         };
     }
 

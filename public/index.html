@@ -7,34 +7,35 @@
     <title>
         fella heroku site
     </title>
-    <link type="stylesheets" href="./themes/components/vendor/bootstrap/css/bootstrap.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
     <link type="stylesheets" href="./themes/components/css/freelancer.min.css">
     <link type="stylesheets" href="./themes/components/vendor/font-awesome/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <style>
+        body {
+            padding-top: 65px;
+        }
+    </style>
 
 
 
 </head>
 
 <body id="page-top" ng-controller="VehicleCtrl">
-    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
-                </button>
-                <a class="navbar-brand" href="#page-top">Fella Enterprise</a>
+            <div class="navbar-header">
+
+                <a class="navbar-brand" href="#page-top">Inventory</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li class="page-scroll">
+                    <li>
                         <a href="#portfolio">Cars</a>
                     </li>
                 </ul>
@@ -43,37 +44,63 @@
         </div>
         <!-- /.container-fluid -->
     </nav>
-  <header>
+    <header>
         <div class="container">
-           
+
         </div>
     </header>
     <section id="portfolio">
         <div class="container">
-            <div class="row">
-              
-            </div>
-          
+        
+                <div class="row">
+                    <div class="col-md-8" style="margin-top:5px">
+                        <table class="table table-bordered table-striped table-fixed">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Model</th>
+                                    <th>Year</th>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr ng-repeat="car in cars">
+                                    <td>{{car.name}}</td>
+                                    <td>{{car.models[0].name}}</td>
+                                    <td>{{car.models[0].years[0].year}}</td>
+                                </tr>
+                            </tbody>
+
+                        </table>
+                    </div>
+
+
+
+                </div>
+           
+
+
         </div>
     </section>
-   
+
 
 
     <script type="text/javascript" src="./themes/components/jquery/dist/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-route.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="./themes/components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
     <script type="text/javascript" src="./themes/components/angular-cookies/angular-cookies.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.min.js"></script>
 
     <!-- custom scripts -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
     <script type="text/javascript" src="./modules/module.js"></script>
     <script type="text/javascript" src="./services/vehicleService.js"></script>
     <script type="text/javascript" src="./controllers/VehicleCtrl.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.16.4/lodash.min.js"></script>
     <script src="./themes/components/js/freelancer.min.js"></script>
-   
+
 
 </body>
 

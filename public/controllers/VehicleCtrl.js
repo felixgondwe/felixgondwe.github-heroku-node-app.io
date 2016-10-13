@@ -9,14 +9,19 @@
 
     function VehicleCtrl($scope,vehicleServices){
          $scope.sum = 2 + 2;
-        $scope.cars = [];
+        
         $scope.text ="";
         vehicleServices.getAllCars().then(function(response){
-                $scope.text = response.data[0];
-                $scope.cars = response.data;
-              /*  _.forEach(response.data, function(o){
-                    console.log(o[0]);
-                });*/
+               // $scope.text = response.data[0];
+              $scope.cars = [];
+            //  console.log(arr[0].name);
+               _.forEach(response.data.makes, function(o){
+                   console.log(o);
+                    $scope.cars.push(o);
+                  
+                   
+                });
+                  console.log($scope.cars);
                
         },function(response){
 
